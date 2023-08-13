@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Trivia Time</string>
+    <string name="start">Start</string>
+    <string name="trivia_time">Trivia Time</string>
+    <string name="back_drop">Back Drop</string>
+    <string name="trophy">Trophy</string>
+    <string name="pass_or_fail">Pass or Fail</string>
+    <string name="victory_or_fail">Victory or Fail</string>
+    <string name="total">Total:</string>
+    <string name="redo">Redo</string>
+    <string name="return_home">Return Home</string>
+    <string name="startGame">Start</string>
+</resources>

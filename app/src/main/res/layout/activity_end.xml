@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/background"
+    tools:context=".endGame">
+
+
+    <ImageView
+        android:id="@+id/backdrop"
+        android:layout_width="354dp"
+        android:layout_height="627dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:contentDescription="@string/back_drop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_shape" />
+
+    <ImageView
+        android:id="@+id/trophy"
+        android:layout_width="338dp"
+        android:layout_height="286dp"
+        android:contentDescription="@string/trophy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221"
+        app:srcCompat="@drawable/trophy"
+
+        />
+
+    <TextView
+        android:id="@+id/victoryorfail"
+        android:layout_width="317dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="@string/victory_or_fail"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/totalscore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trophy"
+        app:layout_constraintVertical_bias="0.36"
+        android:contentDescription="@string/pass_or_fail"/>
+
+    <TextView
+        android:id="@+id/totalscore"
+        android:layout_width="318dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="144dp"
+        android:gravity="center"
+        android:text="@string/total"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/victoryorfail" />
+
+    <Button
+        android:id="@+id/redo"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/LightBlue"
+        android:textColor="@color/black"
+        android:text="Redo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/returnHome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863"
+        android:contentDescription="@string/redo"/>
+
+    <Button
+        android:id="@+id/returnHome"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/LightBlue"
+        android:contentDescription="@string/return_home"
+        android:text="Return"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/redo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
